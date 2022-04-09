@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <title>Chess Board VanillaJS</title>
+  <style>
+    *{
+      margin:0;padding:0;box-sizing: border-box;
+    }
+    body{
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .board{
+      border: 10px solid black;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+    }
+    .square{
+      font-size: 3vmin;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .black{
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="message"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
